@@ -1,0 +1,132 @@
+*{
+    /* primary color  */
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+
+
+    /* secondary color  */
+    ---White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+main{
+    padding:auto 2rem;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Off-white);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.card{
+    background-color: var(---White);
+    padding:2rem;
+    /* margin:auto 2rem; */
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 30%;
+
+}
+
+.divider{
+    display: grid;
+    grid-template-columns:8fr 1fr;
+    position: relative;
+}
+
+.divider > hr{
+    border: solid var(--Light-grey);
+    width: 100%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    height: .9rem;
+    opacity: 20%;
+    
+}
+
+.divider > div {
+    background-color:var(--Purple);
+    border: solid var(--Purple);
+    border-radius: 100%;
+    padding: .34rem;
+    opacity: 80%;
+    text-align: center;
+}
+
+.divider > div > img {
+    width: 60%;
+}
+
+.divider > div:hover {
+    opacity: 100%;
+}
+
+.attribution{
+    margin-top: 2rem;
+}
+
+.inputs  {
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+}
+
+.inputs > div {
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    gap:.2rem;
+}
+
+.inputs > div > input{
+    /* border: solid red; */
+    width:5rem;
+    height:2rem;
+    font-size:1.3rem;
+    border-radius:7%;
+    border: solid var(--Light-grey);
+    border-width:.4px;
+    font-weight: 700;
+}
+
+.inputs > div label{
+    font-size: .2rem;
+    color: var(--Smokey-grey);
+    font-weight: 600;
+}
+
+.inputs > div > span{
+font-size:.2rem;
+}
+
+.results{
+    font-size:3.5rem;
+    font-weight: 800;
+    font-style: italic;
+
+}
+
+.results > div {
+    height: 3.5rem;
+}
+
+
+.results > div > span {
+    color: var(--Purple);
+}
+

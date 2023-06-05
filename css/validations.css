@@ -1,0 +1,14 @@
+
+.invalid{
+    color: var(--Light-red);
+    font-style: italic;
+}
+
+.inputs > div > .invalid-input{
+    border: solid var(--Light-red );
+    /* color: var(--Light-red); */
+}
+
+.inputs > div > .invalid-label{
+    color: var(--Light-red);
+}

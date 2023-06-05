@@ -1,0 +1,51 @@
+@media(max-width:735px){
+
+    .divider > div{
+        position: absolute;
+        justify-self: center;
+    }
+
+    .divider{
+        margin-top: .7rem;
+    }
+
+    .results{
+        font-size:2.5rem;
+    }
+
+}
+
+@media (max-width:600px){
+
+    .inputs  {
+        flex-direction: column;
+        gap:.4rem;
+        justify-items: center;
+    }
+
+    .inputs > div {
+        text-align: center;
+    }
+
+    .inputs > div > input{
+        margin: 0 auto;
+    }
+
+    .results{
+        font-size:2rem;
+    }
+
+    .card{
+        margin-top: 5rem;
+    }
+
+}
+
+@media (max-width:600px){
+    
+    .results{
+        font-size:1rem;
+        margin-top: 1rem;
+    }
+
+}
